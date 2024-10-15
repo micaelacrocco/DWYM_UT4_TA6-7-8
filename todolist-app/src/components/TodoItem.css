@@ -1,0 +1,48 @@
+.todo-item {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre el texto y el botón */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #ffffff; /* Color de fondo */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 10px 0; /* Espacio entre elementos */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para hover */
+    border: 2px solid #ccc; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.todo-item:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+    transform: scale(1.02); /* Aumentar ligeramente el tamaño */
+}
+
+.button-container {
+    display: flex; /* Hace que los botones estén uno al lado del otro */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.todo-item .btn-delete {
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    color: #ff4d4d; /* Color del ícono de eliminar */
+    font-size: 20px; /* Tamaño del ícono */
+    transition: color 0.3s; /* Transición para el color del ícono */
+}
+
+.todo-item .btn.delete:hover {
+    color: #ff1a1a; /* Color al pasar el ratón */
+}
+
+.todo-item .btn-edit {
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    color: #4d91ff; /* Color del ícono de eliminar */
+    font-size: 20px; /* Tamaño del ícono */
+    transition: color 0.3s; /* Transición para el color del ícono */
+}
+
+.todo-item .btn.edit:hover {
+    color: #1b72ff; /* Color al pasar el ratón */
+}

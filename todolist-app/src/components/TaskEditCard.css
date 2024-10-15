@@ -1,0 +1,86 @@
+/* Modal.css */
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin-top: 60px; /* Espacio superior para la alineación */
+}
+
+.btn-add {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno: arriba y abajo, izquierda y derecha */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para el hover */
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+    transform: scale(1.05); 
+}
+
+.btn-close {
+    background-color: #e94141; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno: arriba y abajo, izquierda y derecha */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para el hover */
+}
+
+.btn-close:hover {
+    background-color: #d33c3c;
+    transform: scale(1.05); 
+}
+
+.input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid #ccc; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: border-color 0.3s; /* Transición para el color del borde */
+}
+
+.input:focus {
+    border-color: #4CAF50; /* Color del borde al hacer clic */
+    outline: none; /* Quitar el contorno predeterminado */
+}
+
